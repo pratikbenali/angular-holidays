@@ -1,0 +1,8 @@
+<h2>US Holidays List in 2015</h2>
+<mat-grid-list cols="7" rowHeight="100px">
+    <mat-grid-tile *ngFor="let holiday of holidaysList">
+        <a [routerLink]="['/holiday-details', holiday]">
+            <mat-card>{{renderDate(holiday) | date: 'mediumDate'}}</mat-card>
+        </a>
+    </mat-grid-tile>
+</mat-grid-list>

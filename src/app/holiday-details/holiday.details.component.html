@@ -1,0 +1,13 @@
+<div class="holiday-dertails">
+    <h2 *ngIf="holidayDetails && date">US Holiday Details {{renderDate(date) | date: 'mediumDate'}}</h2>
+    <a class="redirect" [routerLink]="['/']">Go Back</a>
+    <div class="main-content">
+    <mat-grid-list cols="1" role="holidays-details" rowHeight="100px" *ngIf="holidayDetails && date">
+        <mat-grid-tile *ngFor="let holiday of holidayDetails[date]" role="listitem">
+            <mat-card>
+                <mat-card-title><label><b>Holiday name:</b> </label>{{holiday.name}}</mat-card-title>
+                <mat-card-subtitle>{{holiday.public ? 'public holiday': 'not public holiday'}}</mat-card-subtitle>
+            </mat-card>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div></div>

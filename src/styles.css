@@ -1,0 +1,41 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    font-family: 'Courier New', Courier, monospace;
+}
+a{
+    text-decoration: none;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    background: #584719;
+    width: 450px;
+    margin: 0 auto;
+    padding: 8px;
+}
+
+.mat-card {
+    background: #58b98c;
+    color: #fff;
+    text-transform: capitalize;
+}
+.holiday-dertails{
+    width: 450px;
+    color: #272727;
+    margin:  0 auto;
+}
+.holiday-dertails .mat-grid-tile .mat-figure{
+    margin-top: 15px;
+}
+.main-content{
+    width:100%;
+    float: left;
+
+}
+
+.redirect{
+    float: right;
+    margin: 10px 0;
+}
